@@ -578,9 +578,9 @@ function getRealHueRange(colorHue) {
 }
 
 function generate() {
-    navigator.vibrate(0);
-  
-    window.navigator.vibrate(35); // vibre pendant 200ms
+    //navigator.vibrate(0);
+    //window.navigator.vibrate(35);
+    // vibre pendant 200ms
   
   
     let option = {
