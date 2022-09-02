@@ -578,14 +578,17 @@ function getRealHueRange(colorHue) {
 }
 
 function generate() {
-    window.navigator.vibrate(200); // vibre pendant 200ms
-
+    navigator.vibrate(0);
+  
+    window.navigator.vibrate(35); // vibre pendant 200ms
+  
+  
     let option = {
         luminosity: "light",
         format: "rgb",
     };
 
- 
+    let luminosite = localStorage.getItem('luminosite');
 
   if (luminosite && luminosite === "light") {
     option.luminosity = "light";
