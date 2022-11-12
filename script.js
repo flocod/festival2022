@@ -29,7 +29,8 @@ $(document).ready(function () {
         }
       );
 
-      document.querySelector("#billet_invitation").style.display = "none";
+
+      $("#billet_invitation").fadeOut();
 
       setTimeout(function () {
         canvas = $("canvas");
@@ -39,12 +40,14 @@ $(document).ready(function () {
           temp = $(this).attr("class");
           if (temp == "image_invitation") {
             this.toBlob(function (blob) {
-              saveAs(blob, "billet_invitation_" + Date.now() + ".png");
+              saveAs(blob, "invitation_" + Date.now() + ".png");
             });
           }
         });
 
-        window.location.replace("https://chat.whatsapp.com/KjhiCdJNLOjLHvPCGMDZmf");
+        // window.location.replace("https://chat.whatsapp.com/KjhiCdJNLOjLHvPCGMDZmf");
+        $("canvas").remove();
+        $("#billet_invitation").fadeIn();
 
       }, 1000);
        
