@@ -20,14 +20,14 @@
   width: 100%;
   overflow: hidden;
   overflow-y: auto;
-  background: #005da2;
+  background: #0152A1;
 }
 
 .image_invitation {
   display: inline-block;
   width: 50%;
   position: relative;
-  background: linear-gradient(#002f51 0%, #005da2 100%);
+  background: linear-gradient(#002f51 0%, #0152A1 100%);
 }
 
 .image_invitation .invite {
