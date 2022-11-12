@@ -1,41 +1,84 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generateur de theme de couleur dégradé</title> 
-    <meta name="description" content="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💫⚡Festival des Jeunes 2022</title>
+    <meta property="og:title" content="💫⚡Festival des Jeunes 2022">
+    <meta property="og:image" content="images/miniature.png">
+    <meta property="og:site_name" content="youth-festival.com">
+    <meta property="og:description" content="Nous organisons ce Festival pour célébrer le Seigneur Jésus-Christ pour notre jeunesse et pour toutes les bonnes oeuvres qu'il a fait dans nos vies. C'est une occassion pour nous de dire merci au Seigneur pour toutes ces bontés dans nos vies de manière et par là amener plusieurs autres jeunes au Seigneur">
+    <link rel="shortcut icon" href="https://www.cmfidouala.com/images/favicon.ico" type="image/x-icon">
+    <meta
+      name="description"
+      content="Nous organisons ce Festival pour célébrer le Seigneur Jésus-Christ pour notre jeunesse et pour toutes les bonnes oeuvres qu'il a fait dans nos vies. C'est une occassion pour nous de dire merci au Seigneur pour toutes ces bontés dans nos vies de manière et par là amener plusieurs autres jeunes au Seigneur"/>
 
-    <meta name="theme-color" content="">
-<link rel="stylesheet" href="style.css?v=2">
-<body>
-
+    <meta name="theme-color" content="#002f51" />
+    <link rel="stylesheet" href="style.css?v=2" />
+  </head>
+  <body>
     <div id="container">
-  <div class="button" id="button_light" >
-   <div class="button_text">light Theme</div>
-  </div>
-  <div class="button" id="button_dark" >
-   <div class="button_text">dark Theme</div>
-  </div>
-  <div class="button" id="button_bright" >
-   <div class="button_text">bright Theme</div>
-  </div>
-  <div id="output"></div>
-</div>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="scritp.js" type="text/javascript"></script>
+      <div id="billet_invitation" class="image_invitation">
+        <div id="nom_invité" class="invite">lorem isum</div>
+        <img src="images/invitation.png" alt="" />
+      </div>
+
+      <form method="post" id="generate_form" class="container_form">
+        <div class="imput_item">
+          <div class="label">Nom</div>
+          <input
+            id="input_name"
+            name="nom"
+            type="text"
+            placeholder="Entrer votre nom"
+          />
+        </div>
+        <!-- <div class="imput_item">
+          <div class="label">Tél</div>
+          <input
+            id="input_phone"
+            name="tel"
+            type="tel"
+            placeholder="Exemple: 696054687"
+          />
+        </div> -->
+
+        <div id="generate" class="download">Génerer le billet</div>
+        <a
+          id="whatsapp"
+          target="_blank"
+          href="https://chat.whatsapp.com/KjhiCdJNLOjLHvPCGMDZmf"
+          style="background: #00a884 !important"
+          class="download"
+          >Rejoignez nous sur WhatsApp</a
+        >
+      </form>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+      integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="html2canvas.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"
+      integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js" type="text/javascript"></script>
 
     <script>
-        // $(function() {
-        //     var i = 0;
-        //     var colors = ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#0000FF"];
-        //     setInterval(function() {
-        //         var color = colors[i = i++ > 4 ? 0 : i];
-        //         $("meta[name='theme-color']").attr('content', color);
-        //         $("#button_bright").text(color);
-        //     }, 500);
-        // });
+      // $(function() {
+      //     var i = 0;
+      //     var colors = ["#FF0000", "#FFFF00", "#00FF00", "#00FFFF", "#0000FF"];
+      //     setInterval(function() {
+      //         var color = colors[i = i++ > 4 ? 0 : i];
+      //         $("meta[name='theme-color']").attr('content', color);
+      //         $("#button_bright").text(color);
+      //     }, 500);
+      // });
     </script>
-
-</body>
+  </body>
 </html>

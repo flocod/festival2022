@@ -1,58 +1,117 @@
 * {
-    box-sizing: border-box;
-    color: #454845;
-    font-weight: 700;
-    font-family: 'Montserrat', 'Helvetica', sans-serif;
-    font-size: 1.4rem;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .button {
-    background-color: rgba(220,220,235,0.5);
-    cursor: pointer;
-    border-radius: 7px;
-    transition: all ease-in-out 0.5s;
-    margin-top: 2rem;
-    user-select: none;
-    width: 80%;
-    font-size: 20px;
-    height:auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #2b2b2b;
-    text-transform: uppercase;
-
-  }
-  
-.button_text{
-    font-size: 20px !important;
+  box-sizing: border-box;
+ 
+  /* font-weight: 700; */
+  font-family: "Montserrat", "Helvetica", sans-serif;
+  /* font-size: 1.4rem; */
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  outline: none;
 }
 
-  #button:hover {
-    background-color: rgba(220,220,235,0.7);
-    transition: all ease 0.3s;
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  background: #005da2;
+}
+
+.image_invitation {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  background: linear-gradient(#002f51 0%, #005da2 100%);
+}
+
+.image_invitation .invite {
+  font-size: 2.2vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  color: white;
+  text-transform: uppercase;
+}
+
+.image_invitation img {
+  width: 100%;
+}
+
+.container_form{
+display: block;
+color: white !important;
+width: 80%;
+margin-top: 20px;
+}
+
+.imput_item{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.imput_item .label{
+  display: block;
+font-size: 1.2em;
+margin-bottom: 5px;
+}
+.imput_item input{
+  display: block;
+font-size: 1em;
+height: 50px;
+width: 100%;
+color: white;
+border-radius: 12px;
+border: none;
+padding-left: 20px;
+background: #002f51;
+}
+#whatsapp{
+  display: block;
+font-size: 1em;
+height: 50px;
+width: 100%;
+color: white;
+border-radius: 12px;
+border: none;
+padding-left: 20px;
+background: #002f51;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.download{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  height: 70px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  background: linear-gradient(to left, #3EB611 0%, #297a0b 100%);
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+
+
+@media all and (max-width: 700px) {
+  .image_invitation {
+    width: 100%;
   }
-  
-  #output,
-  #button {
-    padding: 1rem;
+
+  .image_invitation .invite {
+    font-size: 4.5vw;
   }
-  
-  #output {
-    font-family: "Fira-Mono", monospace;
-    font-size: 0.7rem;
-    font-weight: 300;
-  }
+}
